@@ -35,7 +35,7 @@ namespace kc9eye\PHPViewWidgets\Templates {
          */
         public function __construct(Options $opts = null, Array $widgets = []) {
             if (!is_null($opts)) {
-                $opts->class = isset($opts->class) ? "col {$opts->class}" : "col";
+                $opts->class = isset($opts->class) ? "{$opts->class}" : "col";
             }
             else {
                 $opts = new Options(['class'=>"col"]);
